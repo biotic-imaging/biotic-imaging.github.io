@@ -199,13 +199,13 @@ After your sign up replace the key in the URL below or paste in the new script t
             function init() {
 	      // The latitude and longitude to center the map (always required)
 	      // You can find it easily at http://universimmedia.pagesperso-orange.fr/geo/loc.htm
-	      var myLatlng = new google.maps.LatLng(51.50852, -0.1254); // London
+	      var myLatlng = new google.maps.LatLng(44.645694, -63.587398); // Halifax
 
                 // Basic options for a simple Google Map
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
-                    zoom: 12,
+                    zoom: 14,
 		// Disable scrollwheel zooming on the map
 		scrollwheel: false,
                     center: myLatlng,
@@ -222,12 +222,24 @@ After your sign up replace the key in the URL below or paste in the new script t
                 // Create the Google Map using out element and options defined above
                 var map = new google.maps.Map(mapElement, mapOptions);
 
-	      // Put a marker at the center of the map
-	      var marker = new google.maps.Marker({
-      		position: myLatlng,
-      		map: map,
-      		title: 'We are right here!'
-  		});
+	      // Put a marker at each location in Halifax
+        var qeii = new google.maps.LatLng(44.645694, -63.587398);
+        var iwk = new google.maps.LatLng(44.637607, -63.583550);
+	      var marker1 = new google.maps.Marker({
+            		position: qeii,
+            		map: map,
+            		title: 'Biomedical Translational Imaging Centre, 3900-1796 Summer St, Halifax, NS B3H 3A7'
+  		        });
+        var marker2 = new google.maps.Marker({
+                position: iwk,
+                map: map,
+                title: 'Biomedical Research Lab, 5850-5980 University Ave, Halifax, NS B3K 6R8'
+              });
+        var marker3 = new google.maps.Marker({
+            		position: iwk,
+            		map: map,
+            		title: 'Laboratory for Clinical Magnetoencephalography, 5850-5980 University Ave, Halifax, NS B3K 6R8'
+  		        });
             }
         </script>
 <script type="text/javascript" src="../assets/js/restart_theme.js"></script>

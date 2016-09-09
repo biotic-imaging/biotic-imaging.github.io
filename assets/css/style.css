@@ -1,14 +1,14 @@
 /*!
 Theme Name: {re}start
 Theme URI: http://www.leonart.gr/htmlthemes/restart_v3/
-Description: Multipurpose HTML Template based on twitter bootstrap. 
+Description: Multipurpose HTML Template based on twitter bootstrap.
 Version: 4.2
 Author: Leon Turut
 Author URI: http://www.leonart.gr
 */
 /* =Imports
 We import bootstrap.less in order to take advantage of its classes and mixins.
-AFTER THAT we import the custom_variables.less which is Bootstrap variables.less 
+AFTER THAT we import the custom_variables.less which is Bootstrap variables.less
 that we copied and altered in order to override the original variables and make our custom bootstrap skin.
 This way we leave Bootstrap unharmed.
 --------------------------------------------------------------*/
@@ -6500,10 +6500,10 @@ button.close {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/*!                    
+/*!
 Theme Name: ReStart
 THEME STYLES
-================================================================= 
+=================================================================
 */
 /* =Helpers
 -------------------------------------------------------------- */
@@ -7662,7 +7662,7 @@ section.parallax-window {
   text-align: center;
   background-color: #000;
   background-color: #222222;
-  background: url(images/backgrounds/wild_oliva_dark.png);
+  background: url(../images/backgrounds/wild_oliva_dark.png);
   color: #cccccc;
   padding: 40px;
   transition: all 500ms linear;
@@ -8171,7 +8171,7 @@ ul.portfolio_filters li .active a:hover {
   line-height: 22px;
 }
 .portfolio_masonry .portfolio_item a .overlay i {
-  background: url(images/backgrounds/wild_oliva__light.png);
+  background: url(../images/backgrounds/wild_oliva__light.png);
   border-radius: 50%;
   padding: 10px;
   line-height: 33px;
@@ -8213,7 +8213,7 @@ ul.portfolio_filters li .active a:hover {
   position: relative;
   left: 3px;
   top: 5px;
-  background: url(images/portfolio/rating_stars.png);
+  background: url(../images/portfolio/rating_stars.png);
 }
 .rating.r0 {
   background-position: 0 240px;
@@ -8478,7 +8478,7 @@ footer {
   margin-top: 40px;
   color: #fff;
   border-top: solid 2px #fff;
-  background: url(images/backgrounds/wild_oliva_dark.png);
+  background: url(../images/backgrounds/wild_oliva_dark.png);
   background: none #222222;
 }
 footer a:hover,
@@ -8651,13 +8651,13 @@ blockquote p {
   height: 51px;
   border: none;
   text-indent: 100%;
-  background: url(images/ui.totop.png) no-repeat left top;
+  background: url(../images/ui.totop.png) no-repeat left top;
   opacity: 50;
   filter: alpha(opacity=5000);
   z-index: 2;
 }
 #toTopHover {
-  background: url(images/ui.totop.png) no-repeat left -51px;
+  background: url(../images/ui.totop.png) no-repeat left -51px;
   width: 51px;
   height: 51px;
   display: block;

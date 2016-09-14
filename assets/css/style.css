@@ -6859,13 +6859,13 @@ header .container {
   margin: 0px 0;
   padding: 0px;
   overflow: hidden;
-  width: 315px;
+  width: 182px;
   height: 90px;
 }
 .navbar a.navbar-brand img {
   float: left;
   margin: 0 6px 0 0;
-  width: 90px;
+  width: 182px;
   height: 90px;
 }
 .navbar a.navbar-brand span.logo_title {

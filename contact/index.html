@@ -53,10 +53,36 @@
 </header>
 <div class="full_page_photo"><div id="map"></div></div>
 <div class="main">
+      <section class="call_to_action">
+        <div class="container">
+          <h3><b>Three laboratories</b> at <b>two BIOTIC locations</b></h3>
+          <h4>located in the <a href="http://www.iwk.nshealth.ca/" target="_0">IWK Health Centre</a> and <a href="http://www.cdha.nshealth.ca/about-us/our-facilities/qeii-health-sciences-centre" target="_0">QEII Health Sciences Centre</a></h4>
+          </h3>
+        </div>
+      </section>
+      <section class="features_teasers_wrapper">
+          <div class="container">
+               <div class="row">
+                    <div class="feature_teaser col-sm-4 col-md-4"> <img alt="responsive" src="images/responsive.png">
+                         <h3>Imaging Research Laboratory</h3>
+                         <p>Located at the <a href="http://www.cdha.nshealth.ca/about-us/our-facilities/qeii-health-sciences-centre" target="_0">QEII Health Sciences Centre</a>, the NRL is equipped with the 3T MRI, EEG, and BIOTIC's main office.</p>
+                    </div>
+                    <div class="feature_teaser col-sm-4 col-md-4"> <img alt="responsive" src="images/git.png">
+                         <h3>Laboratory for Clinical Magnetoencephalography (MEG Lab)</h3>
+                         <p>Located at the <a href="http://www.iwk.nshealth.ca/" target="_0">IWK Health Centre</a>, the MEG Lab houses the most advanced MEG system in Canada and is the only lab of its kind east of Montreal.</p>
+                    </div>
+                    <div class="feature_teaser col-sm-4 col-md-4"> <img alt="responsive" src="images/less.png">
+                         <h3>Biomedical Research Laboratory (BMRL)</h3>
+                         <p>Located at the <a href="http://www.iwk.nshealth.ca/" target="_0">IWK Health Centre</a>, the BMRL houses a the 4T MRI and pre-clinical PET/CT systems.</p>
+                    </div>
+               </div>
+          </div>
+      </section>
+
       <section class="hgroup">
           <div class="container">
                <h1>Don't hesitate to reach out</h1>
-               <h2>BIOTIC operates at two locations - the IWK Health Centre and the QEII Health Sciences Centre</h2>
+               <h2>Send us an email or complete the web form.</h2>
                <ul class="breadcrumb pull-right">
                     <li><a href="../index.html">Home</a> </li>
                     <li class="active">Contact</li>
@@ -118,11 +144,11 @@
           <section class="twitter_feed_wrapper">
                <div class="container">
                     <div class="row">
-                         <div class="twitter_feed_icon col-sm-1 col-md-1"><a href="#twitter"><i class="fa fa-twitter"></i></a></div>
+                         <div class="twitter_feed_icon col-sm-1 col-md-1"><i class="fa fa-comment"></i></div>
                          <div class="col-sm-11 col-md-11">
                               <blockquote>
-                                   <p>This Clean, Flexible, Multipurpose Bootstrap 3.1.1 HTML5 Template will soon become a Wordpress theme with great support!  <a href="#">http://unhub.com/LIot</a></p>
-                                   — LeonArt (@leonartgr) <a href="https://twitter.com/plethorathemes/">April 4, 2014</a></blockquote>
+                                   <p>BIOTIC provides deep scientific expertise, world class facilities, translational experience, and other characteristics necessary for advances in modern health care and life science research.</p>
+                                   — <b>George Abe</b>, <i>CEO</i>, <a href="http://www.cubresa.com/">Cubresa</a></blockquote>
                          </div>
                     </div>
                </div>
@@ -224,19 +250,20 @@ After your sign up replace the key in the URL below or paste in the new script t
 
 	      // Put a marker at each location in Halifax
         var qeii = new google.maps.LatLng(44.645694, -63.587398);
-        var iwk = new google.maps.LatLng(44.637607, -63.583550);
+        var meg = new google.maps.LatLng(44.637607, -63.583550);
+        var bmrl = new google.maps.LatLng(44.637607, -63.583650)
 	      var marker1 = new google.maps.Marker({
             		position: qeii,
             		map: map,
             		title: 'Biomedical Translational Imaging Centre, 3900-1796 Summer St, Halifax, NS B3H 3A7'
   		        });
         var marker2 = new google.maps.Marker({
-                position: iwk,
+                position: bmrl,
                 map: map,
                 title: 'Biomedical Research Lab, 5850-5980 University Ave, Halifax, NS B3K 6R8'
               });
         var marker3 = new google.maps.Marker({
-            		position: iwk,
+            		position: meg,
             		map: map,
             		title: 'Laboratory for Clinical Magnetoencephalography, 5850-5980 University Ave, Halifax, NS B3K 6R8'
   		        });

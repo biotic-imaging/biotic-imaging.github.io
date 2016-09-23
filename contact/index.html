@@ -40,25 +40,10 @@
                          <li><a href="../services/index.html">Services</a></li>
                          <li><a href="../technology/index.html">Technology</a></li>
                          <li class="active"><a href="index.html">Contact</a></li>
-                         <!-- <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#">Pages<span class="caret"></span></a>
-                              <ul class="dropdown-menu">
-                                   <li><a href="home_alternative.html">Home Alternative</a></li>
-                                   <li><a href="page_alternative.html">Page Alternative</a></li>
-                                   <li><a href="gallery.html">Portfolio Masonry</a></li>
-                                   <li><a href="portfolio_item.html">Portfolio Item</a></li>
-                                   <li><a href="portfolio_item_2.html">Portfolio Item II</a></li>
-                                   <li><a href="single_post.html">Single Post</a></li>
-                                   <li><a href="404.html">ERROR 404</a></li>
-                                   <li><a href="register.html">Register or Sign in</a></li>
-                                   <li><a href="elements.html">Design Elements</a></li>
-                                   <li><a href="documentation/index.html">Documentation <span class="label label-danger">new</span></a></li>
-                              </ul>
-                         </li> -->
                     </ul>
                </div>
           </div>
           <div id="social_media_wrapper"> <a href="https://www.facebook.com/bioticimaging"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/bioticimaging"><i class="fa fa-twitter"></i></a> <a href="https://www.linkedin.com/company/biomedical-translational-imaging-centre-biotic-"><i class="fa fa-linkedin"></i></a> </div>
-          <!-- <div id="sign"><a href="register.html"><i class="fa fa-user"></i><span>Register/Sign in</span></a></div> -->
      </div>
 </header>
 <div class="full_page_photo"><div id="map"></div></div>
@@ -105,7 +90,6 @@
                     <div class="office_address col-sm-4 col-md-4">
                          <div class="team_member">
                          	<img src="../assets/images/biotic_logo.png" width="182" height="90" alt="logo">
-                         	<!-- <h5>BIOTIC</h5> -->
                               <h5>Biomedical Translational Imaging Centre</h5><br><br>
                               <div class="team_social"> <a href="https://www.facebook.com/bioticimaging"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/bioticimaging"><i class="fa fa-twitter"></i></a> <a href="https://www.linkedin.com/company/biomedical-translational-imaging-centre-biotic-"><i class="fa fa-linkedin"></i></a></div>
                               <address>
@@ -114,9 +98,6 @@
                               Halifax, NS B3H 3A7<br>
                               <!-- <abbr title="Phone">P:</abbr> (123) 456-7890 -->
                               </address>
-                              <!-- <address>
-                              <abbr title="Phone">E:</abbr> <a href="mailto:#">first.last@example.com</a>
-                              </address> -->
                          </div>
                     </div>
                     <div class="contact_form col-sm-8 col-md-8">
@@ -238,17 +219,17 @@ After your sign up replace the key in the URL below or paste in the new script t
             google.maps.event.addDomListener(window, 'load', init);
 
             function init() {
-	      // The latitude and longitude to center the map (always required)
-	      // You can find it easily at http://universimmedia.pagesperso-orange.fr/geo/loc.htm
-	      var myLatlng = new google.maps.LatLng(44.645694, -63.587398); // Halifax
+    	      // The latitude and longitude to center the map (always required)
+    	      // You can find it easily at http://universimmedia.pagesperso-orange.fr/geo/loc.htm
+    	      var myLatlng = new google.maps.LatLng(44.645694, -63.587398); // Halifax
 
                 // Basic options for a simple Google Map
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                var mapOptions = {
+            var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
                     zoom: 14,
-		// Disable scrollwheel zooming on the map
-		scrollwheel: false,
+                		// Disable scrollwheel zooming on the map
+                		scrollwheel: false,
                     center: myLatlng,
 
                     // How you would like to style the map.
@@ -256,28 +237,28 @@ After your sign up replace the key in the URL below or paste in the new script t
                      styles: [{'featureType':'water','stylers':[{'visibility':'on'},{'color':'#428BCA'}]},{'featureType':'landscape','stylers':[{'color':'#f2e5d4'}]},{'featureType':'road.highway','elementType':'geometry','stylers':[{'color':'#c5c6c6'}]},{'featureType':'road.arterial','elementType':'geometry','stylers':[{'color':'#e4d7c6'}]},{'featureType':'road.local','elementType':'geometry','stylers':[{'color':'#fbfaf7'}]},{'featureType':'poi.park','elementType':'geometry','stylers':[{'color':'#c5dac6'}]},{'featureType':'administrative','stylers':[{'visibility':'on'},{'lightness':33}]},{'featureType':'road'},{'featureType':'poi.park','elementType':'labels','stylers':[{'visibility':'on'},{'lightness':20}]},{},{'featureType':'road','stylers':[{'lightness':20}]}]
                 };
 
-                // Get the HTML DOM element that will contain your map
-                // We are using a div with id="map" seen up in the <body>
-                var mapElement = document.getElementById('map');
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen up in the <body>
+            var mapElement = document.getElementById('map');
 
-                // Create the Google Map using out element and options defined above
-                var map = new google.maps.Map(mapElement, mapOptions);
+            // Create the Google Map using out element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
 
-	      // Put a marker at each location in Halifax
-        var qeii = new google.maps.LatLng(44.645694, -63.587398);
-        var meg = new google.maps.LatLng(44.637607, -63.583550);
-        var bmrl = new google.maps.LatLng(44.637607, -63.583650)
-	      var marker1 = new google.maps.Marker({
+    	      // Put a marker at each location in Halifax
+            var qeii = new google.maps.LatLng(44.645694, -63.587398);
+            var meg = new google.maps.LatLng(44.637607, -63.583550);
+            var bmrl = new google.maps.LatLng(44.637607, -63.583650)
+    	      var marker1 = new google.maps.Marker({
             		position: qeii,
             		map: map,
             		title: 'Biomedical Translational Imaging Centre, 3900-1796 Summer St, Halifax, NS B3H 3A7'
   		        });
-        var marker2 = new google.maps.Marker({
+            var marker2 = new google.maps.Marker({
                 position: bmrl,
                 map: map,
                 title: 'Biomedical Research Lab, 5850-5980 University Ave, Halifax, NS B3K 6R8'
               });
-        var marker3 = new google.maps.Marker({
+            var marker3 = new google.maps.Marker({
             		position: meg,
             		map: map,
             		title: 'Laboratory for Clinical Magnetoencephalography, 5850-5980 University Ave, Halifax, NS B3K 6R8'

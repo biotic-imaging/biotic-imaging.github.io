@@ -1,0 +1,11 @@
+/* =Our Team
+------------ */
+.team_member {
+  text-align: center;
+  background-color: transparent !important;
+  background: none !important;
+  color: #333333;
+  padding: 10px;
+  transition: all 500ms linear;
+  border-radius: 6px;
+}

@@ -9,3 +9,38 @@
   transition: all 500ms linear;
   border-radius: 6px;
 }
+
+footer {
+  /*margin-top: 40px;
+  color: #fff;
+  border-top: solid 2px #fff;
+  background: url(images/backgrounds/wild_oliva_dark.png);*/
+  background: none #78ab36;
+}
+
+/*blockquote {
+    border-left: 5px solid #999999;
+}*/
+
+#footer_teasers_wrapper .footer_teaser p {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.copyright {
+    border-top: solid 1px #ffffff;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.twitter_feed_wrapper {
+    padding: 14px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: solid 1px #ffffff;
+    border-top: solid 1px #ffffff;
+    margin-top: 48px;
+}

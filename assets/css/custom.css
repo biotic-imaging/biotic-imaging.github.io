@@ -44,3 +44,14 @@ footer {
     border-top: solid 1px #ffffff;
     margin-top: 48px;
 }
+
+.footer_social a:link,
+.footer_social a:visited {
+  color: #ffffff;
+}
+.footer_social a:hover,
+.footer_social a:active {
+  color: #0067a6;
+  text-decoration: none;
+  background-color: none;
+}

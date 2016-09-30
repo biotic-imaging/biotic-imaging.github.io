@@ -11,16 +11,15 @@
 }
 
 footer {
-  /*margin-top: 40px;
-  color: #fff;
-  border-top: solid 2px #fff;
-  background: url(images/backgrounds/wild_oliva_dark.png);*/
   background: none #78ab36;
 }
 
-/*blockquote {
-    border-left: 5px solid #999999;
-}*/
+#toTop {
+  background: url(../images/ui.totop.png) no-repeat left top;
+}
+#toTopHover {
+  background: url(../images/ui.totop.png) no-repeat left -51px;
+}
 
 #footer_teasers_wrapper .footer_teaser p {
     font-size: 13px;

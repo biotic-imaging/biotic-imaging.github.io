@@ -58,7 +58,7 @@
 <div class="main">
       <section class="call_to_action">
         <div class="container">
-          <h3><b>Three laboratories</b> at <b>two BIOTIC locations</b></h3>
+          <h3><b>Three</b> BIOTIC sites</h3>
           <h4>located in the <a href="http://www.iwk.nshealth.ca/" target="_blank">IWK Health Centre</a> and <a href="http://www.cdha.nshealth.ca/about-us/our-facilities/qeii-health-sciences-centre" target="_blank">QEII Health Sciences Centre</a></h4>
           </h3>
         </div>
@@ -68,7 +68,7 @@
                <div class="row">
                     <div class="feature_teaser col-sm-4 col-md-4">
                          <h3>Imaging Research Laboratory</h3>
-                         <p>Located at the <a href="http://www.cdha.nshealth.ca/about-us/our-facilities/qeii-health-sciences-centre" target="_blank">QEII Health Sciences Centre</a>, the NRL is equipped with the 3T MRI, EEG, and BIOTIC's main office.</p>
+                         <p>Located at the <a href="http://www.cdha.nshealth.ca/about-us/our-facilities/qeii-health-sciences-centre" target="_blank">QEII Health Sciences Centre</a>, the IRL is equipped with the clinical high-field MRI, EEG, and BIOTIC's main office.</p>
                     </div>
                     <div class="feature_teaser col-sm-4 col-md-4">
                          <h3>Laboratory for Clinical Magnetoencephalography (MEG Lab)</h3>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="feature_teaser col-sm-4 col-md-4">
                          <h3>Biomedical Research Laboratory (BMRL)</h3>
-                         <p>Located at the <a href="http://www.iwk.nshealth.ca/" target="_blank">IWK Health Centre</a>, the BMRL houses a the 4T MRI and pre-clinical PET/CT systems.</p>
+                         <p>Located at the <a href="http://www.iwk.nshealth.ca/" target="_blank">IWK Health Centre</a>, the BMRL houses a the pre-clinical high-field MRI with simultaneous PET, and SPECT systems.</p>
                     </div>
                </div>
           </div>
@@ -223,6 +223,7 @@ When using Google Maps on your own site you MUST signup for your own API key at:
 https://developers.google.com/maps/documentation/javascript/tutorial#api_key
 After your sign up replace the key in the URL below or paste in the new script tag that Google provides.
 -->
+<script type="text/javascript" src="../assets/js/fontawesome-markers.min.js"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaQO8yTSzGB3qR4NSvKQ1VXDo7pWqHB0s&sensor=false"></script>
 <script type="text/javascript">
             // When the window has finished loading create our google map below
@@ -261,16 +262,46 @@ After your sign up replace the key in the URL below or paste in the new script t
     	      var marker1 = new google.maps.Marker({
             		position: qeii,
             		map: map,
+                icon: {
+                    path: fontawesome.markers.HOSPITAL_O,
+                    scale: 0.7,
+                    strokeWeight: 0.2,
+                    strokeColor: 'black',
+                    strokeOpacity: 1,
+                    fillColor: '#78AB36',
+                    fillOpacity: 1.0,
+                },
+                clickable: false,
             		title: 'Biomedical Translational Imaging Centre, 3900-1796 Summer St, Halifax, NS B3H 3A7'
   		        });
             var marker2 = new google.maps.Marker({
                 position: bmrl,
                 map: map,
+                icon: {
+                    path: fontawesome.markers.HOSPITAL_O,
+                    scale: 0.7,
+                    strokeWeight: 0.2,
+                    strokeColor: 'black',
+                    strokeOpacity: 1,
+                    fillColor: '#78AB36',
+                    fillOpacity: 1.0,
+                },
+                clickable: false,
                 title: 'Biomedical Research Lab, 5850-5980 University Ave, Halifax, NS B3K 6R8'
               });
             var marker3 = new google.maps.Marker({
             		position: meg,
             		map: map,
+                icon: {
+                    path: fontawesome.markers.HOSPITAL_O,
+                    scale: 0.7,
+                    strokeWeight: 0.2,
+                    strokeColor: 'black',
+                    strokeOpacity: 1,
+                    fillColor: '#78AB36',
+                    fillOpacity: 1.0,
+                },
+                clickable: false,
             		title: 'Laboratory for Clinical Magnetoencephalography, 5850-5980 University Ave, Halifax, NS B3K 6R8'
   		        });
             }

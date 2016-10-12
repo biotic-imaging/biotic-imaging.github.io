@@ -76,7 +76,7 @@
                     </div>
                     <div class="feature_teaser col-sm-4 col-md-4">
                          <h3>Biomedical Research Laboratory (BMRL)</h3>
-                         <p>Located at the <a href="http://www.iwk.nshealth.ca/" target="_blank">IWK Health Centre</a>, the BMRL houses a the pre-clinical high-field MRI with simultaneous PET, and SPECT systems.</p>
+                         <p>Located at the <a href="http://www.iwk.nshealth.ca/" target="_blank">IWK Health Centre</a>, the BMRL houses a the pre-clinical MRI with simultaneous PET, PET/CT, and SPECT systems.</p>
                     </div>
                </div>
           </div>
@@ -230,17 +230,17 @@ After your sign up replace the key in the URL below or paste in the new script t
             google.maps.event.addDomListener(window, 'load', init);
 
             function init() {
-    	      // The latitude and longitude to center the map (always required)
-    	      // You can find it easily at http://universimmedia.pagesperso-orange.fr/geo/loc.htm
-    	      var myLatlng = new google.maps.LatLng(44.645694, -63.587398); // Halifax
+	        // The latitude and longitude to center the map (always required)
+	        // You can find it easily at http://universimmedia.pagesperso-orange.fr/geo/loc.htm
+	        var myLatlng = new google.maps.LatLng(44.645694, -63.587398); // Halifax
 
                 // Basic options for a simple Google Map
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
             var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
                     zoom: 14,
-                		// Disable scrollwheel zooming on the map
-                		scrollwheel: false,
+            		// Disable scrollwheel zooming on the map
+            		scrollwheel: false,
                     center: myLatlng,
 
                     // How you would like to style the map.
@@ -259,9 +259,9 @@ After your sign up replace the key in the URL below or paste in the new script t
             var qeii = new google.maps.LatLng(44.645694, -63.587398);
             var meg = new google.maps.LatLng(44.637607, -63.583550);
             var bmrl = new google.maps.LatLng(44.637607, -63.583650)
-    	      var marker1 = new google.maps.Marker({
-            		position: qeii,
-            		map: map,
+	        var marker1 = new google.maps.Marker({
+        		position: qeii,
+        		map: map,
                 icon: {
                     path: fontawesome.markers.HOSPITAL_O,
                     scale: 0.7,
@@ -271,9 +271,10 @@ After your sign up replace the key in the URL below or paste in the new script t
                     fillColor: '#78AB36',
                     fillOpacity: 1.0,
                 },
-                clickable: false,
-            		title: 'Biomedical Translational Imaging Centre, 3900-1796 Summer St, Halifax, NS B3H 3A7'
+                clickable: true,
+            	//title: 'Biomedical Translational Imaging Centre, 3900-1796 Summer St, Halifax, NS B3H 3A7'
   		        });
+                marker1.setTitle('Biomedical Translational Imaging Centre, 3900-1796 Summer St, Halifax, NS B3H 3A7');
             var marker2 = new google.maps.Marker({
                 position: bmrl,
                 map: map,
@@ -286,9 +287,10 @@ After your sign up replace the key in the URL below or paste in the new script t
                     fillColor: '#78AB36',
                     fillOpacity: 1.0,
                 },
-                clickable: false,
-                title: 'Biomedical Research Lab, 5850-5980 University Ave, Halifax, NS B3K 6R8'
+                clickable: true,
+                //title: 'Biomedical Research Lab, 5850-5980 University Ave, Halifax, NS B3K 6R8'
               });
+                marker2.setTitle('MEG Lab & BMRL, 5850-5980 University Ave, Halifax, NS B3K 6R8');
             var marker3 = new google.maps.Marker({
             		position: meg,
             		map: map,
@@ -301,9 +303,10 @@ After your sign up replace the key in the URL below or paste in the new script t
                     fillColor: '#78AB36',
                     fillOpacity: 1.0,
                 },
-                clickable: false,
-            		title: 'Laboratory for Clinical Magnetoencephalography, 5850-5980 University Ave, Halifax, NS B3K 6R8'
+                clickable: true,
+            	//title: 'Laboratory for Clinical Magnetoencephalography, 5850-5980 University Ave, Halifax, NS B3K 6R8'
   		        });
+                marker3.setTitle('MEG Lab & BMRL, 5850-5980 University Ave, Halifax, NS B3K 6R8');
             }
         </script>
 <script type="text/javascript" src="../assets/js/restart_theme.js"></script>

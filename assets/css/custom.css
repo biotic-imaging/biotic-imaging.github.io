@@ -14,6 +14,10 @@ footer {
   background: none #78ab36;
 }
 
+.biotic-green {
+    background-color: #78ab36 !important;
+}
+
 #toTop {
   background: url(../images/ui.totop.png) no-repeat left top;
 }

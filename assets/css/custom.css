@@ -12,6 +12,7 @@
 
 footer {
   background: none #78ab36;
+  margin-top: 0px !important;
 }
 
 .biotic-green {
@@ -43,9 +44,11 @@ footer {
 .twitter_feed_wrapper {
     padding: 14px;
     background-color: rgba(0, 0, 0, 0.1);
-    border-bottom: solid 1px #ffffff;
-    border-top: solid 1px #ffffff;
+    /* border-bottom: solid 1px #ffffff;
+    border-top: solid 1px #ffffff; */
     margin-top: 48px;
+    border-bottom: none;
+    border-top: none;
 }
 
 .footer_social a:link,
